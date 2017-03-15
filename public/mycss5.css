@@ -1,0 +1,69 @@
+.list-3{
+	position: relative;
+	left:370px;
+	max-width:490px;
+	width:100%;
+	height:310px;
+	top:20px;
+	border:2px solid green; 
+	padding-left:15px;
+	border-radius: 30px;
+}
+.text-icon{
+	padding:7px;
+	width:200px;
+}
+.glyphicon-gift{
+	color:black;
+	text-shadow:none!important;
+}
+.list-3 li:nth-child(1) .glyphicon{
+	color:#e5ab13;
+	text-shadow:none;
+}
+.list-3 .mutual:hover .glyphicon-gift{
+	color:white!important;
+}
+
+.list-3 li:nth-child(1) .block-of-icons:hover{
+	color:white;
+}
+.list-3 .text-icon:hover .glyphicon{
+	color:white;
+    text-shadow:none;
+}
+.list-3 li:last-child {
+	border-bottom: none;
+}
+.list-3 li:nth-child(1){
+	color:#e5ab13;
+}
+
+.tab3-heading{
+	position: relative;
+	top:10px;
+}
+.text-icon:hover{
+	background-color:#37c48d;
+	color:white !important;
+}
+.wrapped-inside{
+  	padding:10px;
+  }
+.list-3 li{
+  	  border-bottom: 2px solid black;
+	  padding:15px;
+	  font-size: 20px;
+	  list-style:none;
+	  margin-left: 30px;
+	  max-width:450px;
+    }
+.block-of-icons:hover{
+	background-color:#37c48d;
+	height:38px;
+	width:41px;
+	margin:5px;
+	position: relative;
+	color:white;
+	}
+

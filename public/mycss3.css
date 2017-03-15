@@ -1,0 +1,138 @@
+.wrap-tab1{
+	position: relative;
+	top:140px;
+	height:150px;
+	width:100%;
+	max-width: 1200px;
+}
+.list-1{
+	text-decoration: none;
+	position: absolute;
+	top:0px;
+	margin-left:auto; 
+	left:0px;
+	height:100px;
+	width:100%;
+	padding-left:200px;
+}
+.list-1 li:nth-child(3):after{
+	content:'';
+	display:none;
+}
+.list-1 li{
+	list-style: none;
+	display:inline;
+	font-size: 4rem;
+	height:140px;
+	width: 140px;
+	border-radius: 140px;
+	border: 2px solid #474747;
+	padding:15px;
+	margin-right:200px !important;
+	position: relative;
+	}
+.list-1 li:nth-child(1):after{
+	content:"";
+	position:absolute;
+	left:70px;
+	height:3px;
+	width:205px;
+	top:30px;
+	background-color:#474747;
+	animation-name: first-hr;
+    animation-duration: 6s;
+	animation-fill-mode:forwards;
+		
+}
+ @keyframes first-hr {
+    from {background-color: #474747;}
+    to {background-color:#e5ab13;}
+}
+.tab1-icons:nth-child(2):after{
+	content:"";
+	position:absolute;
+	left:70px;
+	height:3px;
+	width:205px;
+	top:30px;
+	background-color:#474747;
+	animation-name: first-hr;
+    animation-duration: 20s;
+	animation-fill-mode:forwards;
+}
+
+.glyphicon-gift ,.glyphicon-user,.glyphicon-shopping-cart{
+	 text-shadow:0 0 5px  #474747,0 0 5px   #474747,0 0 5px   #474747,0 0 5px   #474747 ;
+ 	color:#ECF0F1;
+}
+
+.tab1-icons:nth-child(1){
+	animation-name: example;
+	animation-duration:3s;
+	animation-fill-mode:forwards;
+		 }
+@keyframes example {
+    from {background-color: white;border:2px solid #474747;}
+    to {background-color:#e5ab13;border:1px solid white;}
+}
+
+.tab1-icons:nth-child(2){
+	animation-name: example;
+    animation-duration: 16s;
+	animation-fill-mode:forwards;
+	}
+.tab1-icons:nth-child(3){
+	animation-name: example;
+    animation-duration: 25s;
+	animation-fill-mode:forwards;
+	}
+
+.tab1-icons span{
+	 color:white;
+  		}
+.tab1-icons:nth-child(1) span{
+	animation-name: spanfirst;
+    animation-duration: 3s;
+	animation-fill-mode:forwards;	
+	}
+.tab1-icons:nth-child(2) span{
+	animation-name: spanfirst;
+    animation-duration: 16s;
+	animation-fill-mode:forwards;	
+	}
+.tab1-icons:nth-child(3) span{
+	animation-name: spanfirst;
+    animation-duration: 25s;
+	animation-fill-mode:forwards;	
+	}
+@keyframes spanfirst{
+    from {color: white;text-shadow:0 0 5px  #474747,0 0 5px   #474747,0 0 5px   #474747,0 0 5px   #474747 ;
+ }
+    to {color:#e5ab13;text-shadow:0 0 15px  white,0 0 15px   white,0 0 15px   white,0 0 15px   white ;
+ }
+}
+.wrap-tab1{
+	display:flex;
+	flex-wrap:wrap;
+    justify-content: space-between	
+}
+.list-1 li{
+	flex-item:1;
+	
+}
+.list-1{
+	flex-item:1;
+}
+
+@media and screen(max-width:796px){
+.list-1{
+	position:relative;
+	width:70%;
+	padding-left:10px;
+	margin-left: auto;
+}
+.wrap-tab1{
+	width:70% !important;
+	border:2px solid red !important;
+ }
+}

@@ -4,138 +4,71 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<title>My Tab Styles Inspiration</title>
+		<title>My Tabs</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="mycss1.css">
+		<link rel="stylesheet" href="mycss2.css">
+		<link rel="stylesheet" href="mycss3.css">
+		<link rel="stylesheet" href="mycss4.css">
+		<link rel="stylesheet" href="mycss5.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<style>
-	body{
-		padding: 0px;
-		margin:0px;
-		overflow-x:hidden;
-	}
-	.main-block{
-		width:100%;
-	min-height:200px;
-	}
-.index{
-	position:fixed;
-	left:0px;
-	top:0px;
-	width:8%;
-	height:800px;
-	background-color: #474747;
-z-index: 9;
-}
-.content{
-	width:100%;
-		float:right;
-	text-align: right;
-
-	font-size: 2rem;
-
-}
-header{
-	background-color:#17A779;
-	height:60px;
-	padding-right: 30px;
-	padding-top: 10px;
-font-weight: bold;
-}
-section{
-	position: relative;
-	z-index: 10;
-	width:100%;
-	height:60px;
-	background-color: #091633;
-	top:60px;
-	color:white;
-}
-h3{
-	margin: 0px;
-	padding:0px;
-	position: relative;
-	top:-48px;
-	left:15px;
-	font-size: 3rem;
-}
-.glyphicon-triangle-bottom{
-	color:white;
-	padding:10px;
-	margin-left:5px;
-	font-size: 1.5rem;
-}
-.circle-li{
-	width:25px;
-	height:25px;
-	border-radius: 100%;
-border:2px solid white;
-}
-li{
-	text-decoration: none;
-}
-.second-li{
-	width:35px;
-height:30px;
-border-radius:10px;
-border: 2px solid white;
-}
-.inner{
-
-	width:17px;
-	height:26px;
-border-radius: 12px;
-border:0.5px solid white;
-}
-li{
-	
-	padding-bottom: 20px;
-	list-style-type: none;
-}
-li:nth-child(2){
-	position: relative;
-	left:-5px;
-}
-ul{
-	position: relative;
-	top:150px;
-}
-.glyphicon-list-alt{
-	color:white;
-	font-size: 3rem;
-	position:relative;
-	left:-5px;
-}
-.glyphicon-list-alt:hover{
-color:#17A779;
-}
-.second-li:hover{
-	border:2px solid #17A779;
-	}
-.inner:hover{
-	border:0.5px solid #17A779;
-}
-
-
-.circle-li:hover{
-	border:2px solid #17A779;
-}
-</style>
 <body>
-	<div class="main-block">
-		<div class="index">
-			<ul>
-				<li><a href="mytabs.html"><div class="circle-li"></div></a></li>
-				<li><a href="mytabs2.html"><div class="second-li"><div class="inner"></div></div></a></li>
-				<li><a href="mytabs3.html"><span class="glyphicon glyphicon-list-alt"></span></a></li>
-			</ul>
-		</div>
-		<div class="content">
-			<header>John Snow<span class="glyphicon glyphicon-triangle-bottom"></span></header>
-			
-		</div>
-		<section><h3>Menu</h3></section>
-
-	</div>
+	<header>
+		<div class="left-small-block"><img src="logo.png" alt="" width="80px" height="70px"></div>
+		<div class="name-block"><h2>John Snow <span class="glyphicon glyphicon-triangle-bottom"></span></h2></div>
+  	</header>
+	<div class="full-width-block">Menu</div>
+	<div class="wrapper">
+		<section class="section1">
+			<input type="radio" name="sections" id="option1" checked >
+			<label for="option1"><div class="circle-icon"></div></label>
+			<article>
+				<div class="wrap-tab1">
+				<ul class="list-1">
+					<li class="tab1-icons"><span class="glyphicon glyphicon-gift"></span></li>
+					<li class="tab1-icons"><span class="glyphicon glyphicon-shopping-cart"></span></li>
+					<li class="tab1-icons"><span class="glyphicon glyphicon-user"></span> </li>
+				</ul>
+				</div>
+			</article>
+		</section>
+		<section class="section2">
+			<input type="radio" name="sections" id="option2" >
+			<label for="option2"><div class="toggle-switch-icon"><div class="inner-circle"></div></div></label>
+			<article>
+			<div class="main-tab2-block">
+				<h2 class="tab2-heading">Toggle Switch</h2>
+					<label class="switch switch1">
+  						<input type="checkbox">
+  							<div class="slider"></div>
+					</label>
+						<ul class="list-2">
+							<li><div class="circle btn-circle-1"></div><h4 class="circle-text">Button 1</h4></li>
+							<li><div class="circle btn-circle-2"></div><h4 class="circle-text">Button 2</h4></li>
+							<li><div class="circle btn-circle-3"></div><h4 class="circle-text">Button 3</h4></li>
+							<li><div class="circle btn-circle-4"></div><h4 class="circle-text">Button 4</h4></li>
+							<li><div class="circle btn-circle-5"><div class="inside"></div></div><h4 class="circle-text">Button 5</h4></li>
+						</ul>
+			</div>
+			</article>
+		</section>
+		<section>
+			<input type="radio" name="sections" id="option3" >
+			<label for="option3"><span class="glyphicon glyphicon-list-alt"></span></label>
+			<article>
+			<h2 class="tab3-heading">Checklist</h2>
+	<div class="main-tab3-block">
+		<ul class="list-3">
+	<li><span class="text-icon mutual">Lorem ipsum dolor. <span class="glyphicon glyphicon-gift wrapped-inside mutual"></span></span> <span class="glyphicon glyphicon-cog wrapped-inside block-of-icons"></span> <span class="	glyphicon glyphicon-envelope wrapped-inside block-of-icons"></span><span class="	glyphicon glyphicon-download-alt wrapped-inside block-of-icons" > </span></li>
+		<li> <span class="text-icon">colndde djbgfhdbgf.<span class="glyphicon glyphicon-gift wrapped-inside"></span></span> <span class="glyphicon glyphicon-cog wrapped-inside block-of-icons"></span> <span class="	glyphicon glyphicon-envelope wrapped-inside block-of-icons"></span><span class="	glyphicon glyphicon-download-alt wrapped-inside block-of-icons" > </span></li>
+		<li> <span class="text-icon">dddgfhdg bdgsdffsc.<span class="glyphicon glyphicon-gift wrapped-inside"></span></span> <span class="glyphicon glyphicon-cog wrapped-inside block-of-icons"></span> <span class="	glyphicon glyphicon-envelope wrapped-inside block-of-icons"></span><span class="	glyphicon glyphicon-download-alt wrapped-inside block-of-icons" > </span></li>
+		<li><span class="text-icon">jsdedef cdsddfnbhf. <span class="glyphicon glyphicon-gift wrapped-inside"></span></span> <span class="glyphicon glyphicon-cog wrapped-inside block-of-icons"></span> <span class="	glyphicon glyphicon-envelope wrapped-inside block-of-icons"></span><span class="	glyphicon glyphicon-download-alt wrapped-inside block-of-icons" > </span></li>
+		</ul>
+	  </div>
+	</article>
+  </section>
+ </div>
 </body>
 </html>

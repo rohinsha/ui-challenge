@@ -1,0 +1,113 @@
+.wrapper {
+  color: #333;
+  display: block;
+  font-family: arial, sans-serif;
+  margin: auto;
+  position:fixed;
+  width: 100%;
+  top:140px;
+}
+.wrapper input[name="sections"] {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+ }
+
+.wrapper section {
+  display: fixed;
+}
+
+.wrapper section label {
+   background:#34495F;
+   cursor: pointer;
+   display: block;
+   left:-6px;
+   top:-2px;
+   border:2px solid #34495F;
+   font-weight: bold;
+   padding: 25px 20px;
+   position: relative;
+   width: 156px;
+   z-index:19;
+}
+
+.wrapper section article {
+  display: none;
+  left: 148px;
+  height:500px;
+  padding: 0 0 0 1px;
+  position: fixed;  
+  top:140px;
+  background-color: #ECF0F1;
+  max-width:1215px;
+}
+.wrapper input[name="sections"]:checked + label .glyphicon-list-alt { 
+ color:#00BD9A;
+}
+.wrapper input[name="sections"]:checked + label div{
+  border:2px solid #00BD9A;
+}
+.wrapper section article:after{
+  position:fixed;
+  top:140px;
+  left:0px;
+  width:150px;
+  height:600px;
+  background-color:#34495F;
+  content:'';
+  z-index: 20;
+  display:block;
+}
+
+.wrapper input[name="sections"]:checked ~ article {
+  display: block;
+  }
+
+.wrapper section1 label div{
+padding-top:40px;
+
+}
+.wrapper section2 label{
+ padding-top:20px;
+ l
+
+}
+.circle-icon{
+   width:34px;
+  height:34px;
+  border-radius: 34px;
+  border:2px solid #EEF9FC;
+  position:relative;
+  left:40px;
+  top:20px;
+}
+.toggle-switch-icon{
+  width:37px;
+  height:32px;
+  border-radius:10px;
+  border: 2px solid #EEF9FC;
+  position:relative;
+  margin-left: 20px;
+  left:37px;
+  top:10px;
+}
+.inner-circle{
+
+width:18px;
+height:28px;
+border-radius: 12px;
+border:0.5px solid #EEF9FC;
+}
+
+
+.glyphicon-list-alt{
+font-size: 3.5rem;
+position:relative;
+color:#EEF9FC;
+left:37px;
+
+}
+.wrapper section article{
+    width:100%;
+    text-align: center;
+ }
